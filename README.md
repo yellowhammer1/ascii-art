@@ -5,8 +5,13 @@ Scala project that converts images into ASCII art using a command-line interface
 ![yellowhammer](images/yellowhammer.jpg)
 *Yellowhammer*
 
-![yellowhammer-ascii](images/yellowhammer-ascii.png)
-*Yellowhammer in ascii art*
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/yellowhammer-ascii-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/yellowhammer-ascii-light.png">
+  <img alt="Yellowhammer in ascii art" src="images/yellowhammer-ascii-light.png">
+</picture>
+
+*Yellowhammer in ASCII art*
 
 ## Overview
 
@@ -36,7 +41,7 @@ This separation makes the behavior of each transformation easier to reason about
 
 ## Command-line options
 
-The application takes no positional arguments — everything is a flag. Unknown flags and
+The application takes no positional arguments – everything is a flag. Unknown flags and
 flags with a missing value are rejected with an error message.
 
 ### Image source (required, exactly one)
